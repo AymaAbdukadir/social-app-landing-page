@@ -1,0 +1,289 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(socially_img/back-image.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    scroll-behavior: smooth;
+    
+}
+
+.header{
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 40px;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    background-color:#fff;
+}
+
+.header .logo img{
+    width: 150px;
+    height: auto;
+}
+
+.header .nav ul li{
+    display: inline-block;
+    list-style: none;
+    font-size: 25px;
+    margin-right: 20px;
+    color: grey;
+    
+    
+}
+.nav ul li a{
+    text-decoration: none;
+    color: grey;
+}
+
+.nav ul li a:hover{
+
+    color: black;
+    border-bottom: 3px solid rgba(206, 57, 184, 0.635);
+
+}
+
+.header .btns button{
+    padding: 10px 40px;
+    border: none;
+    font-size: 20px;
+    background-color: white;
+    font-weight: 500;
+}
+
+
+.header .btns .sec-btn{
+    background:rgb(206 57 183) ;
+    border-radius: 30px 5px 30px 30px ;
+    color: white;
+    display: inline-block;
+    padding: 10px 40px;
+    text-decoration: none;
+    font-weight: 500;
+    
+    
+}
+
+
+/* hero-section */
+
+.hero-section{
+    background: url(back-image.png) ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 100px;
+   
+    
+    
+}
+
+
+.hero-section .heading{
+    width: 45%;
+
+
+    
+}
+.hero-section .image{
+    width: 45%;
+   
+}
+
+.hero-section .image img{
+    width: 100%;
+    height: 700px;
+
+}
+
+.heading h1{
+    font-size: 4em;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 20px;
+    line-height: 1.4;
+}
+
+.heading p{
+    font-size: 25px;
+    text-align: justify;
+    font-weight: 500;
+    line-height: 1.5;
+
+}
+
+
+
+
+
+
+
+ .hero-section .heading .sec-btn{
+    background:#ce39b7 ;
+    border-radius: 30px 5px 30px 30px ;
+    color: white;
+    padding: 10px 50px;
+    font-size: 22px;
+    margin-top: 30px;
+    display: inline-block;
+    border: none;
+    text-decoration: none;
+
+}
+
+.hero-section .sec-btn:hover{
+    background-color: #ce39b8cc;
+    color: white;
+    letter-spacing: 3px;
+
+}
+
+
+.header .sec-btn:hover{
+    background-color: #ce39b8cc;
+    color: white;
+    letter-spacing: 3px;
+} 
+
+
+@keyframes image{
+    from{
+        transform: translateX(0px);
+    }
+    To{
+        transform: translateX(-100px);
+    }
+
+}
+
+@keyframes qoralka{
+    from{
+        transform: translateX(-300px);
+    }
+    To{
+        transform: translateX(0);
+    }
+
+}
+.heading{
+    animation-name: qoralka;
+    animation-duration: 1s;
+    animation-delay: 0s;
+    animation-timing-function:ease-in-out;
+}
+
+/* .image{
+    animation-name: image;
+    animation-duration: 1s;
+    animation-delay: 0s;
+    animation-timing-function:ease-in-out;
+} */
+
+
+/* Features Section */
+.features {
+  padding: 5em 3em;
+  text-align: center;
+}
+
+.features h2 {
+  font-size: 2.5em;
+  margin-bottom: 2em;
+}
+
+.feature-cards {
+  display: flex;
+  gap: 2em;
+  flex-wrap: wrap;
+  justify-content: center;
+  
+}
+
+.card {
+  background-color: #ce39b7;
+  padding: 2em;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  max-width: 300px;
+  flex: 1;
+  color: white;
+}
+
+.card h3 {
+  margin-bottom: 1em;
+  color: #333;
+}
+
+/* How it Works */
+.how-it-works {
+  padding: 5em 3em;
+  background: #f5f5ff;
+  text-align: center;
+}
+
+.how-it-works h2 {
+  font-size: 2.5em;
+  margin-bottom: 2em;
+  text-align: center;
+}
+
+.how-it-works ol {
+  list-style-position: inside;
+  max-width: 600px;
+  margin: auto;
+  text-align: left;
+  text-align: center;
+}
+
+.how-it-works li {
+  margin-bottom: 1em;
+  font-size: 1.2em;
+}
+
+/* Download Section */
+.download {
+  padding: 5em 3em;
+  text-align: center;
+}
+
+.download h2 {
+  font-size: 2.5em;
+  margin-bottom: 1em;
+}
+
+.download-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+  margin-top: 2em;
+}
+
+/* Footer */
+.footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 2em 3em;
+  margin-top: 2em;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .hero-content {
+    flex-direction: column;
+  }
+  .feature-cards {
+    flex-direction: column;
+  }
+  .download-buttons {
+    flex-direction: column;
+  }
+}
